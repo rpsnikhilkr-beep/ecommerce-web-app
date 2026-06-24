@@ -1,0 +1,12 @@
+# Node modules (heavy folders)
+node_modules/
+
+# Environment variables (Aapke database ke password aur secrets)
+.env
+.env.local
+.env.development.local
+
+# Build folders
+dist/
+build/
+
