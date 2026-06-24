@@ -10,17 +10,24 @@ const products = [
 ];
 
 const container = document.getElementById('product-container');
+let count = 0;
 
 products.forEach(p => {
     container.innerHTML += `
         <div class="card">
-            <span class="emoji">${p.icon}</span>
-            <h3>${p.name}</h3>
-            <p>₹${p.price.toLocaleString()}</p>
-            <button class="btn" onclick="alert('${p.name} added!')">Add</button>
+            <span style="font-size: 3rem;">${p.icon}</span>
+            <h3 style="margin: 10px 0;">${p.name}</h3>
+            <p style="color: #6366f1; font-weight: bold;">₹${p.price.toLocaleString()}</p>
+            <button class="btn" onclick="updateCart()">Add to Cart</button>
         </div>
     `;
 });
 
+function updateCart() {
+    count++;
+    document.getElementById('cart-count').innerText = count;
+}
+
 document.getElementById('theme-toggle').onclick = () => document.body.classList.toggle('dark-mode');
+
 
