@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apna Bazaar | Premium Selection</title>
+    <title>Apna Bazaar | Mega Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>APNA BAZAAR 🛍️</h1>
-        <div class="actions">
+        <input type="text" id="search" placeholder="🔍 Search 50+ products..." onkeyup="renderProducts()">
+        <div class="nav-controls">
+            <span class="cart-info">Cart: <span id="cart-count">0</span> | Total: ₹<span id="total-price">0</span></span>
             <button id="theme-toggle">🌓</button>
-            <span class="cart-badge">Cart: <span id="cart-count">0</span></span>
         </div>
     </header>
 
     <main id="product-container" class="products-grid"></main>
+
+    <section id="cart-section">
+        <h2>Your Shopping Cart</h2>
+        <div id="cart-items"></div>
+    </section>
 
     <footer>
         <p>Built with precision by Nikhil | © 2026 Apna Bazaar</p>
