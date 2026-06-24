@@ -3,90 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Ecommerce Store</title>
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <title>Apna Bazaar | Mega Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header>
-        <h1>Apna Bazaar 🛒</h1>
-        <button id="theme-toggle" style="position: absolute; top: 15px; left: 15px; background: none; border: none; font-size: 1.5rem; cursor: pointer;">🌙</button>
-
-        <p>Welcome to our online store!</p>
-        <!-- Naya Cart Counter -->
-        <div class="cart-status">
-            <span>Items in Cart: </span>
-            <span id="cart-count">0</span>
-        </div>
+    <header>
+        <h1>Apna Bazaar 🛍️</h1>
+        <button id="theme-toggle">🌓</button>
+        <div class="cart-btn">Cart (<span id="cart-count">0</span>)</div>
     </header>
-    <div class="search-container">
-        <input type="text" id="search-input" placeholder="Search products (e.g., Shoes, Watch)...">
-    </div>
-  <main>
-    <div class="products-grid">
-        <!-- Ab iske andar saare product-cards aane chahiye -->
+    
+    <main id="product-container" class="products-grid"></main>
 
-                        <div class="product-card">
-                <div class="product-img">📱</div>
-                <h3>iPhone 15 Pro Max</h3>
-                <p class="price">₹1,39,900</p>
-                <button class="buy-btn">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <div class="product-img">💻</div>
-                <h3>MacBook Air M3</h3>
-                <p class="price">₹1,14,900</p>
-                <button class="buy-btn">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <div class="product-img">👕</div>
-                <h3>Oversized Cotton T-Shirt</h3>
-                <p class="price">₹999</p>
-                <button class="buy-btn">Add to Cart</button>
-            </div>
-            <!-- Product 1 -->
-            <div class="product-card">
-                <div class="product-img">👟</div>
-                <h3>Aesthetic Sports Shoes</h3>
-                <p class="price">₹1,999</p>
-                <button class="buy-btn">Add to Cart</button>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="product-card">
-                <div class="product-img">⌚</div>
-                <h3>Smart Fitness Watch</h3>
-                <p class="price">₹2,499</p>
-                <button class="buy-btn">Add to Cart</button>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="product-card">
-                <div class="product-img">🎧</div>
-                <h3>Wireless Headphones</h3>
-                <p class="price">₹1,499</p>
-                <button class="buy-btn">Add to Cart</button>
-            </div>
-    </div>
-
-    </main>
-        <!-- Cart Modal -->
-    <div id="cart-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Your Cart 🛒</h2>
-            <div id="cart-items-list">
-                <!-- Added items yahan dikhenge -->
-                <p id="empty-message">Your cart is empty!</p>
-            </div>
-            <div class="cart-total">
-                <h3>Total: ₹<span id="total-price">0</span></h3>
-            </div>
-            <button class="checkout-btn" onclick="alert('Order Placed Successfully! 🎉')">Checkout</button>
-        </div>
-    </div>
-
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
